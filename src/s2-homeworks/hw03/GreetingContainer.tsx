@@ -50,6 +50,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         setName(e.currentTarget.value) // ++ need to fix
 
         error && setError('Ошибка! Введите имя!') //Changed to string from figma
+        setError('');
     }
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
